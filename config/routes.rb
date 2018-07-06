@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-    resources :assignments, only: [:show, :create, :update, :destroy]
+    resources :assignments, only: [:index, :show, :create, :update, :destroy]
 end

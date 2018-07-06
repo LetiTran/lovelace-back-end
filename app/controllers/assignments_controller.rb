@@ -1,8 +1,15 @@
 class AssignmentsController < ApplicationController
-    def show
+    def index
+        # if params[:assignment_repo]
+            data = AssignmentWrapper.get_repos
+        # #   else
+        #     data = Assignment.all
+        #   end
+            
+          render status: :ok, json: data
     end
-    
-    def create
+
+    def show
     end
 
     def update
