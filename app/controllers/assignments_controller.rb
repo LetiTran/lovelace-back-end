@@ -1,7 +1,8 @@
 class AssignmentsController < ApplicationController
     def index
         # if params[:assignment_repo]
-            data = AssignmentWrapper.get_repos
+        AssignmentWrapper.get_repos
+        data = Assignment.all
         # #   else
         #     data = Assignment.all
         #   end
