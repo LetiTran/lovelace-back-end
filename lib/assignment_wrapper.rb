@@ -4,7 +4,7 @@ class AssignmentWrapper
     BASE_URL = "https://api.github.com/repos/Ada-C9/" #TODO: change to a variable
     KEY = ENV["GITHUB_TOKEN"]
 
-    ALL_BASE_URL = "https://api.github.com/users/Ada-C9n/repos" #TODO: change to a variable
+    ALL_BASE_URL = "https://api.github.com/users/Ada-C9/repos" #TODO: change to a variable
 
     def self.get_repos(assignment_repo = "")
       url = ALL_BASE_URL + assignment_repo + "?page=1&per_page=100&access_token=" + KEY #TODO: change to a variable
